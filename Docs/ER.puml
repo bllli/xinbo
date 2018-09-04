@@ -1,0 +1,36 @@
+@startuml
+object user {
+    id
+    realname
+    school
+}
+
+object course {
+    id
+    name
+}
+
+object cclass {
+    id
+    year
+    name
+}
+
+object classroom {
+    id
+    name
+}
+
+object schedule {
+    id
+    check_in_time
+    start_time
+    finish_time
+}
+
+user "m" -- "n" cclass
+course "1" -- "n" cclass
+cclass "1" -- "n" schedule
+schedule "n" -- "1" classroom
+
+@enduml
