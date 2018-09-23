@@ -1,7 +1,6 @@
 from datetime import datetime
 
 from django.conf import settings
-from django.contrib.auth import authenticate
 from django.test import TestCase
 
 from ..models import User, Course, CClass, Schedule, ClassRoom, School

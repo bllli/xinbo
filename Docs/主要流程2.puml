@@ -1,0 +1,9 @@
+@startuml
+actor "学生" as stu
+actor "工作人员" as work
+== 课前 工作人员端展示课程二维码 ==
+stu -> work: 扫描二维码
+work -> work: 工作人员界面展示扫码用户预存照片
+work -> work: 点击
+
+@enduml
